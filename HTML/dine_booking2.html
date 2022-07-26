@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            dine booking
+        </title>
+    </head>
+    <body>
+        <form>
+            <div align="center">
+                <h2>Dine Booking</h2><br/><br/>
+        <table>
+            <tr>
+                <td>
+                    <label>Visitor Name:</label>
+                </td>
+                <td>
+                    <input type="text" autofocus maxlength="20"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number of Members:</label>
+                </td>
+                <td>
+                    <input type="number" maxlength="2"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Contact No:</label></td>
+                <td><input type="number"/></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email"/></td>
+            </tr>
+            <tr>
+                <td><label>Type of food:</label></td>
+                <td><input type="checkbox" name="food" value="south" checked/>South Indian
+                    <input type="checkbox" name="food" value="north"/>North Indian
+                    <input type="checkbox" name="food" value="chinese"/>chinese
+                    <input type="checkbox" name="food" value="western"/>Western</td>
+            </tr>
+            <tr>
+                <td><label>Room Status:</label></td>
+                <td> <input type="radio" name="room" value="ac" checked/>AC
+                    <input type="radio" name="room" value="non"/>Non-AC</td>
+            </tr>
+            <tr>
+                <td><label>Venue Preference:</label></td>
+                <td><select name="venue" id="venue">
+                    <option selected disabled>--SELECT--</option>
+                    <option value="Arena">Arena</option>
+                    <option value="Fiesta">Fiesta</option>
+                    <option value="vista">Vista</option>
+                    <option value="mythri">Mythri</option>
+                    <option value="magna">Magna</option>
+                    <option value="Oasis">Oasis</option>
+                    <option value="Amoeba" disabled>Amoeba</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Book"/></td>
+                <td><input type="reset" value="Reset"/></td>
+            </tr>
+        </table>
+            </div>
+        </form>
+    </body>
+</html>
