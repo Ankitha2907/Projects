@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>XYZ regis Form</title>
+        <style>
+            .required-field::after {
+            content: "*";
+            color: red;
+            
+          }
+          
+          form{
+            border-inline: 80%;
+            padding:30px;
+           border: 20px solid black;
+           color:blue;
+           background-color:aliceblue;
+           width:40%;
+          }
+          input[type=text], input[type=password]{
+            width:100%;
+          }
+        </style>
+    </head>
+    <body >
+        <form>
+        <h1 align="center">Registration Form</h1>
+        <label>First Name<span class="required-field"></span></label><br/><br/>
+        <input type="text" required maxlength="10" placeholder="firstname" /><br/><br />
+        <label>Last Name<span class="required-field" ></span></label><br/><br/>
+        <input type="text" required maxlength="10" placeholder="lastname"/><br/><br/>
+        <label>Date of birth<span class="required-field" ></span></label><br/><br/>
+        <input type="date" required /><br/><br/>
+        <label>Gender<span class="required-field"></span></label><br/><br/>
+        <input type="radio" name="sex" />Male<br/>
+        <input type="radio" name="sex" />Female<br/>
+        <input type="radio" name="sex" />Other<br/><br/>
+        <label>Degree<span class="required-field"></span></label><br/><br/>
+        <select list list name="degree">
+            <option value="b" >Bachelors</option>
+            <option value="m">Masters</option>
+            <option value="d">Doctrate</option>
+        </select><br/><br/>
+        <label>Specialization<span class="required-field"></span></label><br/><br/>
+        <input type="text" required maxlength="40" /><br/><br/>
+        <label>Current GPA<span class="required-field"></span></label><br/><br/>
+        <input type="number" required max="5" step="0.1"/><br/><br/>
+        <label>Phone Number<span class="required-field"></span></label><br/><br/>
+        <input type="text" required maxlength="10" /><br><br/>
+         Address<span class="required-field"></span><br/><br/>
+        <input type="text" rows="4" cols="40" required></input> 
+    </form>
+    </body>
+</html>
