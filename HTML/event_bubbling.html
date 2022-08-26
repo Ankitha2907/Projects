@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Event Bubbling</title></head>
+    <body>
+        <div id="parent"><button onclick="pc()">parent</button>
+            <button id="child" onclick="event.stopPropagation()">Child</button>
+        </div>
+        <script type="text/javascript">
+            function pc(){
+            document.getElementById("child").addEventListener("click", function () {
+                    alert("You clicked the Child element!");
+                }, false);
+         
+                document.getElementById(
+        "parent").addEventListener("click", function () {
+                    alert("You clicked the parent element!");
+                }, false);
+            }
+        </script>
+    </body>
+</html>
